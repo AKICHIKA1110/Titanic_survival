@@ -50,12 +50,18 @@ source myenv/bin/activate
 ```bash
 pip install -r requirements.txt
 ```
-## 分析手順
+## 使用ライブラリ
 
 - Python
 - Pandas
 - Matplotlib
 - Seaborn
 - scikit-learn
+
+##　筆者の環境
+
+- Python 3.9.13
+- Windows 11
+- Vscode
 
 
