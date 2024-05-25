@@ -1,43 +1,61 @@
-# ロジスティック回帰分析
+# タイタニックデータセットにおける生存分析
 
-このプロジェクトでは、ロジスティック回帰を用いてタイタニック号の乗客データから生存に関わる要素の重要度を測る。
+このプロジェクトでは、ロジスティック回帰を用いてタイタニック号の乗客データから生存に関わる要素の重要度を測定し、予測モデルを構築します。
 
 ## 分析手順
 
 1. **データの前処理**
-   - 欠損値の処理: 年齢(`Age`)と運賃(`Fare`)の欠損値をそれぞれの中央値で補完。
-   - カテゴリカル変数の変換: 性別(`Sex`)を数値にエンコーディングし、`male`を0、`female`を1として処理。
+   - 年齢(`Age`)と運賃(`Fare`)の欠損値を中央値で補完。
+   - 性別(`Sex`)を数値にエンコーディング（男性を0、女性を1とする）。
 
 2. **特徴量選択**
-   - 分析に使用する特徴量: `Pclass`, `Sex`, `Age`, `Fare`
+   - 分析に使用する特徴量は `Pclass`, `Sex`, `Age`, `Fare` です。
 
 3. **モデルの構築と訓練**
-   - `sklearn`ライブラリの`LogisticRegression`クラスを使用してモデルを構築。
-   - データを訓練セットとテストセットに分割し、モデルを訓練。
+   - `sklearn`ライブラリの`LogisticRegression`クラスを使用。
+   - データを訓練セットとテストセットに分割。
 
 4. **モデルの評価**
-   - 精度(`Accuracy`)、混同行列(`Confusion Matrix`)、分類レポート(`Classification Report`)を用いてモデルの性能を評価。
+   - 精度(`Accuracy`)、混同行列(`Confusion Matrix`)、分類レポート(`Classification Report`)による評価。
 
-5. **特徴量の重要度分析**
-   - モデルの係数を解析し、各特徴量が生存予測に与える影響を評価。
+## 結果の視覚化
 
-## 使用技術
+1. **年齢分布**
+   - ![Age Distribution](./result/age_plot.png)
+2. **乗船港別の分布**
+   - ![Embarkation Port Distribution](./result/embarkation_port_rate.png)
+3. **特徴量の重要度**
+   - ![Feature Importance](./result/PFI_result.png)
+4. **性別分布**
+   - ![Gender Distribution](./result/sex_reta_plot.png)
+
+## 仮想環境のセットアップ
+
+プロジェクトの依存関係を管理するためにPythonの仮想環境を設定する手順は以下の通りです。
+
+### 1. 仮想環境の作成
+
+```bash
+python -m venv myenv
+```
+### 2. 仮想環境のactivate
+```bash
+myenv\Scripts\activate
+```
+
+```bash
+source myenv/bin/activate
+```
+### 3. 依存関係のインストール
+```bash
+pip install -r requirements.txt
+```
+## 分析手順
 
 - Python
 - Pandas
 - Matplotlib
 - Seaborn
 - scikit-learn
-
-## データセット
-このプロジェクトでは、`train.csv`のみを使用しています。`test.csv`は分析には含まれておらず、モデルの訓練と評価は`train.csv`に分割されたデータを使用して行われます。
-
-## `requirements.txt`の使い方
-
-プロジェクトで使用する依存ライブラリをインストールするために、`requirements.txt`ファイルが含まれています。このファイルにリストされたライブラリをインストールするには、以下のコマンドを実行してください：
-
-```bash
-pip install -r requirements.txt
-```
 
 
