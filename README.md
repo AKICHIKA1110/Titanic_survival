@@ -10,6 +10,7 @@
 
 2. **特徴量選択**
    - 分析に使用する特徴量は `Pclass`, `Sex`, `Age`, `Fare` です。
+   - `Pclass`はチケットの等級、`Sex`は性別、`Age`は年齢、`Fare`は運賃を示している。
 
 3. **モデルの構築と訓練**
    - `sklearn`ライブラリの`LogisticRegression`クラスを使用。
