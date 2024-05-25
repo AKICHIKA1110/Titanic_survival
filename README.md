@@ -38,7 +38,7 @@
 
 ```bash
 pip install -r requirements.txt
-
+```
 # ロジスティック回帰モデルの数理的背景
 
 ## モデルの概要
