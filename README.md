@@ -34,15 +34,16 @@
 プロジェクトの依存関係を管理するためにPythonの仮想環境を設定する手順は以下の通りです。
 
 ### 1. 仮想環境の作成
-
-```bash
+環境名 `myenv`は例として挙げています。
+```bash 
 python -m venv myenv
 ```
 ### 2. 仮想環境のactivate
+Windows:
 ```bash
 myenv\Scripts\activate
 ```
-
+macOS and Linux:
 ```bash
 source myenv/bin/activate
 ```
@@ -57,6 +58,7 @@ pip install -r requirements.txt
 - Matplotlib
 - Seaborn
 - scikit-learn
+- Juypter
 
 ##　筆者の環境
 
