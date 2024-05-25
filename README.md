@@ -63,7 +63,7 @@ pip install -r requirements.txt
 - scikit-learn
 - Juypter
 
-##　筆者の環境
+## 筆者の環境
 
 - Python 3.9.13
 - Windows 11
