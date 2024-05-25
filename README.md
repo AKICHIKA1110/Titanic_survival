@@ -18,17 +18,19 @@
 4. **モデルの評価**
    - 精度(`Accuracy`)、混同行列(`Confusion Matrix`)、分類レポート(`Classification Report`)による評価。
 
-## 結果の視覚化
+## train.csvの視覚化
 
 1. **年齢分布**
    - ![Age Distribution](./result/age_plot.png)
 2. **乗船港別の分布**
    - ![Embarkation Port Distribution](./result/embarkation_port_rate.png)
-3. **特徴量の重要度**
-   - ![Feature Importance](./result/PFI_result.png)
-4. **性別分布**
-   - ![Gender Distribution](./result/sex_reta_plot.png)
+3. **性別分布**
+   - ![Gender Distribution](./result/sex_rate_plot.png)
 
+## ロジスティック回帰分析による各要素の重要度の結果
+1. **特徴量の重要度**
+   - ![Feature Importance](./result/PFI_result.png)
+   
 ## 仮想環境のセットアップ
 
 プロジェクトの依存関係を管理するためにPythonの仮想環境を設定する手順は以下の通りです。
