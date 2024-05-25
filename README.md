@@ -75,7 +75,7 @@ pip install -r requirements.txt
 
 ## 筆者の環境
 
-- Python 3.9.13
+- Python 3.9.13 (3.10で仮想環境の作成に問題があるため非推奨)
 - Windows 11
 - Vscode
 
